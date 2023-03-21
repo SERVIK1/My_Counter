@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "24598818489",
+    "firebase_url": "https://counter-4bdfe-default-rtdb.firebaseio.com",
+    "project_id": "counter-4bdfe",
+    "storage_bucket": "counter-4bdfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24598818489:android:626cefa4cedfc35b1af568",
+        "android_client_info": {
+          "package_name": "ru.raspgleb.p2p"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24598818489-85dmuc7npuftv4p2bgau6kbbs8of21j9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHh2S6oTCyhr7k_hstfleGC0Imhb09Htc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24598818489-85dmuc7npuftv4p2bgau6kbbs8of21j9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

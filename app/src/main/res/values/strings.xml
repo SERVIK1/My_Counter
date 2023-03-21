@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="val">1</string>
+    <string name="def_value_save">0</string>
+    <string name="input_name">Введите название</string>
+    <string name="save_data">Сохранение данных</string>
+    <string name="save_tag">Название</string>
+    <string name="save_num">999999</string>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="672dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/numbers"
+                        android:layout_width="411dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lcd_nova"
+                        android:gravity="center_horizontal"
+                        android:text="@string/val"
+                        android:textColor="@color/orange"
+                        android:textSize="35pt"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button_recet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:layout_marginStart="268dp"
+                        android:layout_marginBottom="500dp"
+                        android:background="@drawable/round_button"
+                        android:text="RESET"
+                        android:textColor="@color/orange"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <Button
+                        android:id="@+id/button_dec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="82dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginBottom="500dp"
+                        android:background="@drawable/round_button"
+                        android:text="DEC"
+                        android:textColor="@color/orange"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button_click"
+                        app:layout_constraintHorizontal_bias="0.156"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <Button
+                        android:id="@+id/button_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="82dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/round_button"
+
+                        android:text="INC"
+                        android:textColor="@color/orange"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button_recet"
+                        app:layout_constraintTop_toTopOf="@+id/numbers"
+                        app:layout_constraintVertical_bias="0.154" />
+
+                    <Button
+                        android:id="@+id/button_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="172dp"
+                        android:backgroundTint="@color/orange"
+                        android:text="SAVE RESULTS"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/grey_200"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ListView
+                        android:id="@+id/main_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
